@@ -1,0 +1,32 @@
+{
+    "name": "bbs-lab/nova-tiptap-field",
+    "description": "A Laravel Nova tiptap editor field.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "tiptap",
+        "vue",
+        "editor"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BbsLab\\NovaTiptapField\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BbsLab\\NovaTiptapField\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

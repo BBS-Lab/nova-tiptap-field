@@ -1,0 +1,156 @@
+.tiptap-content {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.tiptap-content .ProseMirror:focus {
+  outline: none;
+}
+
+.tiptap-content .ProseMirror.resize-cursor {
+  cursor: col-resize;
+}
+
+.tiptap-content .ProseMirror ins {
+  text-decoration: none;
+  background-color: highlight;
+}
+
+.tiptap-content .ProseMirror p, .tiptap-content .ProseMirror ul, .tiptap-content .ProseMirror ol, .tiptap-content .ProseMirror blockquote, .tiptap-content .ProseMirror pre {
+  margin-bottom: 1em;
+}
+
+.tiptap-content .ProseMirror h1, .tiptap-content .ProseMirror h2, .tiptap-content .ProseMirror h3, .tiptap-content .ProseMirror h4, .tiptap-content .ProseMirror h5, .tiptap-content .ProseMirror h6 {
+  margin-bottom: 0.5em;
+}
+
+.tiptap-content .relationship-tabs-panel .ProseMirror h1 {
+  display: block;
+}
+
+.tiptap-content .ProseMirror pre {
+  white-space: pre-line;
+}
+
+.tiptap-content .ProseMirror blockquote {
+  border-left: 4px solid var(--60);
+  padding-left: 12px;
+  margin-left: 0;
+  font-style: italic;
+}
+
+.tiptap-content .ProseMirror p:last-child {
+  margin-bottom: 0;
+}
+
+.tiptap-content .ProseMirror td p {
+  margin-bottom: 0;
+}
+
+.tiptap-content .ProseMirror td p:last-child {
+  margin-bottom: 0;
+}
+
+.tiptap-content .ProseMirror table {
+  border: 1px solid var(--60);
+}
+
+.tiptap-content .ProseMirror td.selectedCell {
+  background-color: blanchedalmond;
+}
+
+.tiptap-content .ProseMirror td {
+  border: 1px solid var(--60);
+  padding: 6px;
+}
+
+.tiptap-button {
+  box-sizing: border-box;
+  vertical-align: top;
+  margin-right: 8px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.tiptap-button.is-thin {
+  font-weight: 400;
+}
+
+.tiptap-button-container {
+  position: relative;
+  overflow: visible;
+}
+
+.tiptap-button-form {
+  position: absolute;
+  top: 44px;
+  left: -130px;
+  display: flex;
+  background-color: white;
+  align-items: center;
+}
+
+.tiptap-button-form .form-input {
+  width: 180px;
+  margin-right: 20px;
+  color: black;
+}
+
+.tiptap-button-form .btn {
+  width: 16px;
+  height: 16px;
+}
+
+.tiptap-button::before {
+  margin: 0;
+  height: 16px;
+  line-height: 0;
+  position: relative;
+}
+
+.tiptap-button.is-bold::before {
+  content: "B";
+}
+
+.tiptap-button.is-italic::before {
+  font-style: italic;
+  content: "I";
+}
+
+.tiptap-button.is-strike::before {
+  text-decoration: line-through;
+  content: "S";
+}
+
+.tiptap-button.is-underline::before {
+  text-decoration: underline;
+  content: "U";
+}
+
+.tiptap-button.is-code::before {
+  content: "<>";
+}
+
+.tiptap-button.is-code_block::before {
+  content: "</>";
+}
+
+.tiptap-content .edit-html {
+  min-height: 400px;
+  margin-top: 10px;
+}
+
+.tiptap-content .iframe__embed {
+  border: 0;
+}
+
+.tiptap-content .iframe__input {
+  display: block;
+  width: 100%;
+  font: inherit;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
